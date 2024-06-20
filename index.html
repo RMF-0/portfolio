@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlTag" data-bs-theme="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Mon portfolio</title>
+</head>
+<body >
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle z-3">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (dark)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+              </svg>
+          <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+              <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+              Light
+              <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="dark" aria-pressed="true">
+              <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+              Dark
+              <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+              <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+              Auto
+              <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+          </li>
+        </ul>
+        </div>
+    <nav class=" navbar navbar-expand-lg bg-body-tertiary sticky-top" id="navbar">
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="#">Olivier Ratsimbazafy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav d-flex justify-content-center align-items-center me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#apropos">A propos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#projet">Expérience et Projets</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#competence">Compétences</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                
+            </ul>
+            <div class="form-check form-switch " role="search">
+                <input class="form-check-input" type="checkbox" id="darkSwitch">
+                <label class="form-check-label" for="darkSwitch">Mode sombre</label>
+            </div>
+            
+          </div>
+        </div>
+      </nav>
+<main data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="0">
+      <section class="position-relative" style="height: 100vh;width: 100%;">
+        <img src="https://img.freepik.com/photos-premium/fond-technologie-abstrait-code-programmation-developpeur-logiciels-script-informatique_34663-31.jpg?size=626&ext=jpg" alt="image de fond" class="img-fluid  opacity-25 z-0 position-absolute top-0 start-0 w-100 h-100">
+        <h2 class="z-1 position-absolute top-50 start-50 translate-middle fw-bold" id="message"></h2>
+        </section>
+    <section class="container hidden-section" id="apropos">
+        <p class="display-6 my-3 fw-bold"> A propos de moi</p>
+        <div class=" my-2">
+            <div class="container w-100 h-100 ">
+                <div class="d-flex flex-column flex-md-row w-100 h-100" style="gap: 40px;">
+                    <div style="box-sizing: border-box;min-width: 40%;">
+                        <img src="fana.png" class="img-fluid rounded-circle" alt="mon portrait" style="width:75%;">
+                    </div>
+                    <div class="d-flex flex-column justify-content-between" style="box-sizing: border-box;min-width: 60%;">
+                        <div class="h-25">
+                            <ul class="nav nav-tabs flex-nowrap" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active text-reset fw-semibold" id="apropos-tab" data-bs-toggle="tab" data-bs-target="#apropos-tab-pane" type="button" role="tab" aria-controls="apropos-tab-pane" aria-selected="true">A propos</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link text-reset fw-semibold" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills-tab-pane" type="button" role="tab" aria-controls="skills-tab-pane" aria-selected="false">Soft skills</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link text-reset fw-semibold" id="centre-intere-tab" data-bs-toggle="tab" data-bs-target="#centre-intere-tab-pane" type="button" role="tab" aria-controls="centre-intere-tab-pane" aria-selected="false">Centre d'intérés</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="h-75">
+                            <div class="tab-content mt-3" id="myTabContent">
+                                <div class="tab-pane fade show active " id="apropos-tab-pane" role="tabpanel" aria-labelledby="apropos-tab" tabindex="0">
+                                    <p class="t text-wrap fs-6">Etudiant en bachelor concepteur, développeur d'application à ECE.paris Campus Lyon (promotion 2026). <br>
+                                    je suis passioné par le dévelppement informatique et je souhaite me spécialisé en développeur full stack plustards. Créatif et passionné de nouvelles technologies, je cherche sans cesse à repousser mes limites et à innover. Je suis enthousiaste à l'idée de contribuer à des projets innovant.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="skills-tab-pane" role="tabpanel" aria-labelledby="skills-tab" tabindex="0">
+                                        <ul style="list-style: none;">
+                                            <li class="my-1"><span class="fs-5 fw-semibold">Motivé et curieux : </span>je suis motivé par les défis et les opportunités de croissance. Mon désir constant d'amélioration me pousse à donner le meilleur de moi-même dans tout ce que j'entreprends.</li>
+                                            <li class="my-1"><span class="fs-5 fw-semibold">Travail en Équipe : </span>J'ai une approche collaborative et je crois fermement que le travail d'équipe est essentiel pour atteindre des objectifs ambitieux.</li>
+                                            <li class="my-1"><span class="fs-5 fw-semibold">Communication : </span>Ma capacité à communiquer clairement et efficacement est un atout</li>
+                                            <li class="my-1"><span class="fs-5 fw-semibold">Apprentissage Rapide : </span>Je suis un apprenant rapide et je suis toujours prêt à relever de nouveaux défis. J'absorbe rapidement les connaissances et je les applique de manière créative.</li>
+                                            <li class="my-1"><span class="fs-5 fw-semibold">. . .</span></li>
+                                        </ul>
+                                    
+                                </div>
+                                <div class="tab-pane fade" id="centre-intere-tab-pane" role="tabpanel" aria-labelledby="centre-intere-tab" tabindex="0">
+                                    <ul style="list-style: none;">
+                                        <li class="my-1"><span class="fs-5 fw-semibold">Basket-ball : </span>je suis un vrai passioné, c'est mon sport préféré. j'ai jouer dans le club de mon lycée à l'époque.</li>
+                                        <li class="my-1"><span class="fs-5 fw-semibold">Jeu d'échecs : </span>je joue de temps en temps des parties en ligne sur chess.com ou lichess, cela me stimule et aide aussi à avoir un esprit d'analyse et de résolution de problème</li>
+                                        <li class="my-1"><span class="fs-5 fw-semibold">Développement et codage informatique : </span>j'adore coder. J'ai toujours cette envie de découvrir et apprendre des nouveaux trucs sur le dévelppemetn informatique.</li>
+                                        <li class="my-1"><span class="fs-5 fw-semibold">Jeu viédo :  </span>Je joue de temps en temps aux jeu vidéo, que ce soit sur mobile, pc ou encore console de jeu.</li>
+                                        <li class="my-1"><span class="fs-5 fw-semibold">. . .</span></li>
+                                    </ul>
+                                </div>
+                                
+                              </div>
+                        </div>
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <hr class="my-5">
+    </div>
+    <section id="projet" class="light-mode my-2 hidden-section">
+        <div class="container">
+            <p class="display-5 my-3 fw-bold">Mes experiences et projetes Universitaires</p>
+        </div>
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 row-cols-xxl-4 g-3">
+                <div class="col position-relative flex-item" style=" height: 500px;">
+                    <div class="flip-card p-2 case">
+                        <div class="flip-card-inner border rounded-3 ">
+                            <div class="flip-card-front ">
+                                    <div class="position-relative  w-100 h-100 rounded-3">
+                                        <div class="position-absolute w-100 h-100 rounded-3" style="background: #252525;"></div>
+                                        <img src="projet1.png" class="opacity-50 rounded-3" alt="..." style="width: 100%;height: 100%;object-fit: cover;">
+                                        <div class="description position-absolute start-0 top-50 p-1 w-100 text-white">
+                                            <h5 class="fw-bolder text-uppercase fs-4">AUTOFFO</h5>
+                                            <p class="fw-semibold fs-5 lh-lg">Application web pour vente et location de voiture de luxe</p>
+                                            <button class="mt-2 btn btn-lg border-2 rounded btn-outline-light text-uppercase fw-semibold bouton">En savoir plus</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="flip-card-back">
+                                <div class="position-relative w-100 h-100 rounded-3">
+                                    <div class="position-absolute w-100 h-100 rounded-3" style="background: #222222;"></div>
+                                    <img src="projet1.png" class="opacity-25 rounded-3" alt="..." style="width: 100%;height: 100%;object-fit: cover;">
+                                    <div class="description position-absolute start-0 top-50 p-1 w-100 text-white text-start">
+                                        <h5 class="fw-bolder text-uppercase fs-4">AUTOFFO</h5>
+                                        <p class="fw-semibold fs-5 ">
+                                            Conception et développement d'une application web de location de voiture de luxe, avec une intreface facile et convivial. <br>
+                                            <span class="text-italic" style="color: #f9e6ce;">Réalisé par :</span> Moi et 2 autres étudiants <br>
+                                            <span class="text-italic" style="color: #f9e6ce;">Temps :</span> 20 heures <br>
+                                            <span class="text-italic" style="color: #f9e6ce;">langages:</span> HTML, CSS, Javascript, PHP, SQL. <br>
+                                            <span class="text-italic" style="color: #f9e6ce;">outils : </span> VSCODE, Github, mail, whatsapp, app.diagramme.io <br></p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col position-relative flex-item" style=" height: 500px;">
+                  <div class="flip-card p-2 case">
+                        <div class="flip-card-inner border rounded-3 ">
+                            <div class="flip-card-front ">
+                                    <div class="position-relative  w-100 h-100 rounded-3">
+                                        <div class="position-absolute w-100 h-100 rounded-3" style="background: #252525;"></div>
+                                        <img src="portfolio.png" class="opacity-50 rounded-3" alt="..." style="width: 100%;height: 100%;object-fit: cover;">
+                                        <div class="description position-absolute start-0 top-50 p-1 w-100 text-white">
+                                            <h5 class="fw-bolder text-uppercase fs-4">Portfolio</h5>
+                                            <p class="fw-semibold fs-5 lh-lg">Développement du portfolio sur lequel vous y êtes actuellement</p>
+                                            <button class="mt-2 btn btn-lg border-2 rounded btn-outline-light text-uppercase fw-semibold bouton">En savoir plus</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="flip-card-back">
+                                <div class="position-relative w-100 h-100 rounded-3">
+                                    <div class="position-absolute w-100 h-100 rounded-3" style="background: #222222;"></div>
+                                    <img src="portfolio.png" class="opacity-25 rounded-3" alt="..." style="width: 100%;height: 100%;object-fit: cover;">
+                                    <div class="description position-absolute start-0 top-50 p-1 w-100 text-white text-start">
+                                        <h5 class="fw-bolder text-uppercase fs-4">mon portfolio</h5>
+                                        <p class="fw-semibold fs-5 ">
+                                            Site statique decrivant principalement mes projets et mes compétences <br>
+                                            <span class="text-italic" style="color: #f9e6ce;">Réalisé par :</span> moi-même<br>
+                                            <span class="text-italic" style="color: #f9e6ce;">Temps :</span> 10 heures <br>
+                                            <span class="text-italic" style="color: #f9e6ce;">langages:</span> HTML, CSS, bootstrap, Javascript<br>
+                                            <span class="text-italic" style="color: #f9e6ce;">outils : </span> VSCODE, Github, firebase, bootstrap documentation <br></p>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col position-relative flex-item" style=" height: 500px;">
+                  <div class="flip-card p-2 case">
+                    <div class="flip-card-inner border rounded-3 ">
+                        <div class="flip-card-front ">
+                                <div class="position-relative  w-100 h-100 rounded-3">
+                                    <div class="position-absolute w-100 h-100 rounded-3" style="background: #252525;"></div>
+                                    <img src="gestion-projet.png" class="opacity-50 rounded-3" alt="..." style="width: 100%;height: 100%;object-fit: cover;">
+                                    <div class="description position-absolute start-0 top-50 p-1 w-100 text-white">
+                                        <h5 class="fw-bolder text-uppercase fs-4">Dataflow</h5>
+                                        <p class="fw-semibold fs-5 lh-lg">Application web gestion de projet pour entreprise et particulier</p>
+                                        <button class="mt-2 btn btn-lg border-2 rounded btn-outline-light text-uppercase fw-semibold bouton">En savoir plus</button>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="flip-card-back">
+                            <div class="position-relative w-100 h-100 rounded-3">
+                                <div class="position-absolute w-100 h-100 rounded-3" style="background: #222222;"></div>
+                                <img src="gestion-projet.png" class="opacity-25 rounded-3" alt="..." style="width: 100%;height: 100%;object-fit: cover;">
+                                <div class="description position-absolute start-0 top-50 p-1 w-100 text-white text-start">
+                                    <h5 class="fw-bolder text-uppercase fs-4">dataflow</h5>
+                                    <p class="fw-semibold fs-5 text-break ">
+                                        développement d'une application web pour gérer plusieurs projets. <br>
+                                        <span class="text-italic" style="color: #f9e6ce;">Fonctionnalités clés : </span>  dasbord et calendrier, créer un projets,créer une équipe, attribuer des taches, mettre un commentaire sur les tâche, partager des fichiers, ...<br>
+                                        <span class="text-italic" style="color: #f9e6ce;">Réalisé par :</span> Olivier (moi), Fahim<br>
+                                        <span class="text-italic" style="color: #f9e6ce;">Temps :</span> 20 heures <br>
+                                        <span class="text-italic" style="color: #f9e6ce;">langages:</span> HTML, CSS, bootstrap, Javascript, PHP, SQL. <br>
+                                        <span class="text-italic" style="color: #f9e6ce;">outils : </span> VSCODE, wampserver mysql, Github, mail, whatsapp, app.diagramme.io, bootstrap documentation, google docs. <br></p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col position-relative flex-item" style=" height: 500px;">
+                  <div class="flip-card p-2 case">
+                    <div class="flip-card-inner border rounded-3 ">
+                        <div class="flip-card-front ">
+                                <div class="position-relative  w-100 h-100 rounded-3">
+                                    <div class="position-absolute w-100 h-100 rounded-3" style="background: #252525;"></div>
+                                    <img src="snoopy.png" class="opacity-50 rounded-3" alt="..." style="width: 100%;height: 100%;object-fit: cover;">
+                                    <div class="description position-absolute start-0 top-50 p-1 w-100 text-white">
+                                        <h5 class="fw-bolder text-uppercase fs-4">Revanche de snoopy</h5>
+                                        <p class="fw-semibold fs-5 lh-lg">remake du jeu Revanche de snoopy en C sur le terminal.</p>
+                                        <button class="mt-2 btn btn-lg border-2 rounded btn-outline-light text-uppercase fw-semibold bouton">En savoir plus</button>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="flip-card-back">
+                            <div class="position-relative w-100 h-100 rounded-3">
+                                <div class="position-absolute w-100 h-100 rounded-3" style="background: #222222;"></div>
+                                <img src="snoopy-2.png" class="opacity-25 rounded-3" alt="..." style="width: 100%;height: 100%;object-fit: contain;">
+                                <div class="description position-absolute start-0 top-50 p-1 w-100 text-white text-start">
+                                    <h5 class="fw-bolder text-uppercase fs-4">Revanche de snoopy</h5>
+                                    <p class="fw-semibold fs-5 ">
+                                        Développement du jeu revanche de snoopy en C sans bibliothèque graphique ni externes. <br>
+                                        <span class="text-italic" style="color: #f9e6ce;">Fonctionnalités clés : </span> menu, choix de niveau par mot de passe, sauvegarde et rechargement d'une partie par mot de passe, mur déplaçable, mur piégé, bal piégée. <br>
+                                        <span class="text-italic" style="color: #f9e6ce;">Réalisé par :</span> Olivier (moi), et 2 autres étudiants <br>
+                                        <span class="text-italic" style="color: #f9e6ce;">Temps :</span> 20 heures <br>
+                                        <span class="text-italic" style="color: #f9e6ce;">langages:</span> C (chaine de caractères, structur, pointeur, fichier(bin et txt)) <br>
+                                        <span class="text-italic" style="color: #f9e6ce;">outils : </span> Clion (jetBrain), google docs, Github, Linux.<br></p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <hr class="my-5">
+    </div>
+    <section class=" my-2 hidden-section" id="competence" style="min-height: 50vh;">
+        <div class="container">
+            <p class="display-5 my-3 fw-bold">Mes compétences</p>
+        </div>
+        <div class="container-fluid">
+            <span class="display-6 my-3 ms-5">Langage de programation : </span>
+            <div class="row row-cols-3 row-cols-md-4 row-cols-lg-6 my-3 mx-2"style="min-height:40vh;">
+                <div class="col d-flex justify-content-center align-items-center flex-column h-50 g-2 flex-item">
+                    <img src="html.png" alt="..." class="objectif-fit-contain" style="width: 90%;height: 90%;"><span class="text-uppercase fw-bold fs-4">HTML</span></div>
+                <div class="col d-flex justify-content-center align-items-center flex-column h-50 g-2 flex-item">
+                    <img src="js.png" alt="..." class="objectif-fit-contain" style="width: 90%;height: 90%;"><span class="text-uppercase fw-bold fs-4">javasrcipt</span></div>
+                <div class="col d-flex justify-content-center align-items-center flex-column h-50 g-2 flex-item">
+                    <img src="css.png" alt="..." class="objectif-fit-contain" style="width: 90%;height: 90%;"><span class="text-uppercase fw-bold fs-4">css</span></div>
+                <div class="col d-flex justify-content-center align-items-center flex-column h-50 g-2 flex-item">
+                    <img src="php.png" alt="..." class="objectif-fit-contain" style="width: 90%;height: 90%;"><span class="text-uppercase fw-bold fs-4">php</span></div>
+                <div class="col d-flex justify-content-center align-items-center flex-column h-50 g-2 flex-item">
+                    <img src="c++.png" alt="..." class="objectif-fit-contain" style="width: 90%;height: 90%;"><span class="text-uppercase fw-bold fs-4">c++</span></div>
+                <div class="col d-flex justify-content-center align-items-center flex-column h-50 g-2 flex-item">
+                    <img src="c.png" alt="..." class="objectif-fit-contain" style="width: 90%;height: 90%;"><span class="text-uppercase fw-bold fs-4">c</span></div>
+                <div class="col d-flex justify-content-center align-items-center flex-column h-50 g-2 flex-item">
+                    <img src="sql.png" alt="..." class="objectif-fit-contain" style="width: 90%;height: 90%;"><span class="text-uppercase fw-bold fs-4">SQL</span></div>
+            </div>
+            <span class="display-6 ms-5">Réseau et système : </span>
+            <div class="row row-cols-3 row-cols-md-4 row-cols-lg-6 my-3 mx-2 gx-3 gy-1 hidden-section"style="height:20vh;">
+                <div class="col d-flex flex-column">
+                    <div class="d-flex justify-content-center align-items-center border rounded-circle h-50  p-2 flex-item" style="flex:1; background-color:#aeaeae"><div class="fw-bold ">Base en réseau</div>
+                    </div>
+               </div>  
+                <div class="col d-flex flex-column">
+                    <div class="d-flex justify-content-center align-items-center border rounded-circle h-50  p-2 flex-item" style="flex:1; background-color:#fdaefd"><div class="fw-bold ">OSI et TCP/IP</div></div>
+               
+                </div>  
+                <div class="col d-flex flex-column">
+                    <div class="d-flex justify-content-center align-items-center border rounded-circle h-50  p-2 flex-item" style="flex:1; background-color:#8b8bff"><div class="fw-bold ">Linux</div></div>
+                </div>
+                <div class="col d-flex flex-column">
+                    <div class="d-flex justify-content-center align-items-center border rounded-circle h-50  p-2 flex-item" style="flex:1; background-color:yellow"><div class="fw-bold ">Virtual Box</div></div>
+                </div> 
+                <div class="col d-flex flex-column">
+                    <div class="d-flex justify-content-center align-items-center border rounded-circle h-50  p-2 flex-item" style="flex:1; background-color:#ff6565"><div class="fw-bold ">Cisco packet tracer</div></div>
+                </div>        
+                <div class="col d-flex flex-column">
+                    <div class="d-flex justify-content-center align-items-center border rounded-circle h-50  p-2 flex-item" style="flex:1; background-color:#7edf7e"><div class="fw-bold ">Script (bash et powershell)</div></div>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <hr class="my-5">
+    </div>
+    <section id="contact" class="my-3 hidden-section">
+        <div class="container">
+            <p class="display-5 my-3 fw-bold">Contact</p>
+        </div>
+        <div class="container">
+            <div class="my-3"><p class="fs-4">Vous êtes intéressés par mon profil ou vous avez un poste à me pourvoir, envoyer moi un message sur :</p></div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                <div class="col">
+                    <div class="p-1 d-flex justify-content-between align-items-center border rounded bg-info-subtle case flex-item" >
+                        <div class="w-25 "><img src="images.png" alt=".." class="h-100 w-100 objectif-fit-contain"></div>
+                        <div class="w-50 text-nowrap"><a href="https://www.linkedin.com/in/olivier-ratsimbazafy-2bb0a5303" class="text-decoration-none text-reset">Olivier Ratsimbazafy</a>
+                            </div>
+                        <div  style="width: 10%;">
+                            <a href="https://www.linkedin.com/in/olivier-ratsimbazafy-2bb0a5303" class="text-decoration-none text-reset">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-box-arrow-in-up-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5"/>
+                                <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0z"/>
+                            </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-1 d-flex justify-content-between align-items-center border rounded bg-info-subtle case flex-item">
+                        <div class="w-25">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope-at h-100 w-100" viewBox="0 0 16 16">
+                                <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                                <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                            </svg>
+                        </div>
+                        <div class="w-50 text-nowrap">
+                            <a href="mailto:fanambola05@gmail.com" class="text-decoration-none text-reset">fanambola05@gmail.com</a>
+                        </div>
+                        <div  style="width: 10%;">
+                            <a href="mailto:fanambola05@gmail.com" class="text-decoration-none text-reset">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-box-arrow-in-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5"/>
+                                    <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0z"/>
+                                </svg>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col">
+                    <div class="p-1 d-flex justify-content-between align-items-center border rounded bg-info-subtle case flex-item">
+                        <div class="w-25"><img src="fb.png" alt=".." class="h-100 w-100 objectif-fit-contain"></div>
+                        <div class="w-50 text-center"><a href="https://www.facebook.com/fana.mbl" class="text-decoration-none text-reset">Fanantenana Ratsimbazafy</a></div>
+                        <div  style="width: 10%;">
+                            <a href="https://www.facebook.com/fana.mbl" class="text-decoration-none text-reset">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-box-arrow-in-up-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5"/>
+                                <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0z"/>
+                            </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container" style="height: 15vh;"></div>
+    <section class="container hidden-section">
+        <div class="d-flex justify-content-center align-items-center">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScPVSXcMGAX1io9HFcIOP5BCBpAeM-P1HuHklkCCdtqkkYMaw/viewform?embedded=true" width="640" height="900" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+        </div>
+    </section>
+</main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
