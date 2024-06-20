@@ -17,13 +17,6 @@
     opacity: 1;
     transform: translateX(0); 
 }
-.case{
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-.case:hover{
-    transform: scale(1.01);
-} 
 .flip-card {
     perspective: 1000px;
     width: 100%;
