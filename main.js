@@ -51,10 +51,10 @@ window.addEventListener('scroll', () => {
         addLetter();
     }
     const messages = [
-        'Salut 😊🖖,',
-        ' Je m\'appelle Ratsimbazafy Mbola Fanantenana Olivier😎',
-        'Bienvenu sur mon portfolio site personnel😜',
-        'Laisser moi un message sur mes réseaux😁📩'
+        'Salut 🖖,',
+        ' Je m\'appelle Ratsimbazafy Mbola Fanantenana Olivier',
+        'Bienvenu sur mon portfolio site personnel',
+        'Laisser moi un message sur mes réseaux📩'
     ];
     displayTextLetterByLetter(messages);
 
